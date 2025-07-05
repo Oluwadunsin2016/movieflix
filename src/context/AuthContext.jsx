@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { createContext, createRef, useContext, useEffect, useRef, useState } from "react";
-import PropTypes from "prop-types";
+import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useGetLoginUser } from "../api/authMutation";
 
@@ -121,10 +120,6 @@ export const AuthContextProvider = ({ children }) => {
       {children}
     </AuthContext.Provider>
   );
-};
-
-AuthContextProvider.propTypes = {
-  children: PropTypes.any,
 };
 
 export const useAuth = () => {

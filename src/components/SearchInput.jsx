@@ -1,5 +1,4 @@
 import { Search } from 'lucide-react'
-import propTypes from 'prop-types'
 
 // const SearchInput = ({setSearchText, handleSearch,setIsMenuOpen = () => {}}) => {
 const SearchInput = ({setSearchText, handleSearch}) => {
@@ -20,11 +19,5 @@ const SearchInput = ({setSearchText, handleSearch}) => {
   )
 }
 
-export default SearchInput
-
-SearchInput.propTypes={
-    setSearchText: propTypes.func.isRequired,
-    handleSearch: propTypes.func.isRequired,
-    // setIsMenuOpen: propTypes.func.isRequired,
-}
+export default SearchInput;
 

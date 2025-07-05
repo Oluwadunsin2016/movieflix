@@ -4,28 +4,6 @@ import { useAuth } from "../context/AuthContext";
 import { Button } from "@heroui/react";
 import { setToast } from "./Toast/toastUtils";
 
-// Mock data to simulate API response
-// const mockData = Array.from({ length: 30 }, (_, i) => ({
-//   kind: 'youtube#searchResult',
-//   etag: `etag_${i}`,
-//   id: {
-//     kind: 'youtube#video',
-//     videoId: `videoId_${i}`
-//   },
-//   snippet: {
-//     title: `Bollywood Movie ${i + 1} (2025) | Full Hindi Movie | Latest Release`,
-//     description: `This is the description for Bollywood Movie ${i + 1}. It's a full-length feature film released in 2025 with an amazing cast and crew. Watch the full movie now for an entertaining experience.`,
-//     publishedAt: "2025-07-01T14:52:10Z",
-//     thumbnails: {
-//       high: {
-//         url: `https://picsum.photos/1280/720?random=${i}`,
-//         width: 480,
-//         height: 360
-//       }
-//     }
-//   }
-// }));
-
 const Main = () => {
   const [playingVideoId, setPlayingVideoId] = useState(null);
   // const [isLoading, setIsLoading] = useState(true);
